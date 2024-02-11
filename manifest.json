@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "helloify",
+  "version": "1.0",
+
+  "description": "Ajout une div www.google.com dans le header de certaines pages web.",
+
+  "icons": {
+    "48": "icons/icons.jpg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.cdiscount.com/high-tech/televiseurs/*"],
+      "js": ["helloify.js"]
+    }
+  ]
+}
